@@ -7,7 +7,7 @@ const BookingCards = () => {
   useEffect(() => {
     const fetchData = async () => {
       return (
-        fetch("/api/all-bookings")
+        fetch("https://bmsbackend.onrender.com/api/all-bookings")
           // ✅ call response.json() here
           .then((response) => response.json())
           .then((data) => {

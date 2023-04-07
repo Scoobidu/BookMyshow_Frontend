@@ -33,7 +33,7 @@ const App = () => {
       console.log(slot);
       console.log(seat);
 
-      await fetch(`/api/booking`, {
+      await fetch(`https://bmsbackend.onrender.com/api/booking`, {
         method: "post",
         body: JSON.stringify({
           movie: movie,
